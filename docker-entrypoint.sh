@@ -128,4 +128,8 @@ EOPHP
 
 chown -R www-data:www-data .
 
+curl -o wp-cli.phar -SL https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+php wp-cli.phar --allow-root plugin install https://downloads.wordpress.org/plugin/hello
+-dolly-for-your-song.zip
+
 exec "$@"
